@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* This tells Tailwind v4 where to find the font */
+@theme {
+  --font-pixel: "Press Start 2P", system-ui;
+}
+
+* {
+  font-family: var(--font-pixel);
+  image-rendering: pixelated;
+}
+
+body {
+  margin: 0;
+  background-color: #064e3b; /* Dark Forest Green */
+  color: white;
+  min-height: 100vh;
+}
