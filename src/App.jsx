@@ -19,7 +19,6 @@ const App = () => {
   setIsSending(true);
 
   const templateParams = {
-    to_email: 'aedceljake@gmail.com', 
     message: `It's a date on ${date}! Please wear black top. We'll be at Din Tai Fung in SM Makati, 2pm.`
   };
 
