@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-// Note: You would need to run `npm install @emailjs/browser` 
 import emailjs from '@emailjs/browser';
 
 const App = () => {
@@ -16,17 +15,15 @@ const App = () => {
     valentine: ["EJ: 'I've been thinking about asking you all day...'", "EJ: 'We could have so much fun together!'", "EJ: 'Don't break my pixelated heart now!'", "EJ: 'I promise it'll be the best date ever.'", "EJ: 'Just one chance? I know you'll enjoy it!'"]
   };
 
-  // --- EMAIL FUNCTION ---
  const sendEmail = (date) => {
   setIsSending(true);
-  
-  // 1. Prepare the variables to match your EmailJS Template
+
   const templateParams = {
-    to_email: 'aedceljake@gmail.com', // The recipient
-    message: `It's a date on ${date}. Please dress nicely with black theme. In SM Manila Hotpot, at 1pm`
+    to_email: 'aedceljake@gmail.com', 
+    message: `It's a date on ${date}! Please wear black top. We'll be at Din Tai Fung in SM Makati, 2pm.`
   };
 
-  // 2. Send the real email
+
   emailjs.send(
     'service_4f081wo', 
     'template_tbuj1rb', 
