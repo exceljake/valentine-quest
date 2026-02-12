@@ -64,7 +64,7 @@ const App = () => {
           <AnimatePresence mode="wait">
             {stage === 0 && (
               <motion.div key="title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="absolute inset-0 flex flex-col items-center justify-center text-center bg-black/60 z-20 p-4">
-                <h1 className="text-2xl mb-6 text-yellow-400 drop-shadow-[2px_2px_0px_#000] leading-tight">WILDWOOD ROMANCE</h1>
+                <h1 className="text-2xl mb-6 text-yellow-400 drop-shadow-[2px_2px_0px_#000] leading-tight">WILDWOOD WANDERER</h1>
                 <button onClick={() => setStage(1)} className="bg-[#f0a020] text-white px-6 py-3 border-b-4 border-r-4 border-[#805010] active:translate-y-1">START GAME</button>
               </motion.div>
             )}
